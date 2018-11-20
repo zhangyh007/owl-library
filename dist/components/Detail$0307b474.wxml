@@ -1,0 +1,26 @@
+<import src="BookInfo$10574342" />
+<import src="CommentList$1b8f05a5" />
+<template name="Detail$0307b474">
+  <view class="_div data-v-1258344d detail">
+    <template data="{{...$root[$kk+'0'], $root}}" is="BookInfo$10574342"></template>
+    <template wx:if="{{commentList.length !== 0}}" data="{{...$root[$kk+'1'], $root}}" is="CommentList$1b8f05a5"></template>
+    <view class="_div data-v-1258344d comment" wx:if="{{showAdd}}">
+      <textarea value="{{comment}}" bindinput="handleProxy" placeholder="评论区：大侠，请积极发言" maxlength="{{100}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_textarea data-v-1258344d" />
+      <view class="_div data-v-1258344d location">
+        <label class="_span data-v-1258344d"> 地理位置:
+          <label class="_span data-v-1258344d color-primary"> {{location || '无'}} </label>
+        </label>
+        <switch class="_switch data-v-1258344d location-switch" checked="{{location}}" color="#EA5A49" bindchange="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" />
+      </view>
+      <view class="_div data-v-1258344d phone">
+        <label class="_span data-v-1258344d"> 手机型号:
+          <label class="_span data-v-1258344d color-primary"> {{phone || '无'}} </label>
+        </label>
+        <switch class="_switch data-v-1258344d phone-switch" checked="{{phone}}" color="#EA5A49" bindchange="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" />
+      </view>
+      <button class="_button data-v-1258344d btn" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">评论</button>
+    </view>
+    <view class="_div data-v-1258344d loadmore-text" wx:else> 提示：未登录或已评论无法评论 </view>
+    <button open-type="share" bindtap="handleProxy" class="_button data-v-1258344d btn" data-eventid="{{'4'}}" data-comkey="{{$k}}" style=" {{showAdd ? 'margin-top:' + '20px' + ';' : ''}}">转发给好友</button>
+  </view>
+</template>

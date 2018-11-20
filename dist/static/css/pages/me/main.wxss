@@ -1,0 +1,56 @@
+@import "/static/css/vendor.wxss";
+
+.me.data-v-7c8dafed {
+  padding: 0 30rpx;
+}
+.me .user-info.data-v-7c8dafed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.me .user-info .login.data-v-7c8dafed {
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+}
+.me .user-info .nickname.data-v-7c8dafed {
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.me .user-info ._img.data-v-7c8dafed {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.me .btn.data-v-7c8dafed {
+  margin: 40rpx 0;
+  width: 100%;
+  color: #fff;
+  background: #EA5149;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.me .btn.data-v-7c8dafed:hover {
+  background: #FA5149;
+}
+.me .btn.data-v-7c8dafed:active {
+  background: #FA5149;
+}
+.year-progress.data-v-7250076c {
+  width: 100%;
+}
+.year-progress .progress-word.data-v-7250076c {
+  font-size: 32rpx;
+}
+.year-progress .notice.data-v-7250076c {
+  font-size: 28rpx;
+  color: #EA5A49;
+  margin-top: 40rpx;
+}

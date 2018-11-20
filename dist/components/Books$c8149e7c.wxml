@@ -1,0 +1,36 @@
+<import src="TopSwiper$16617035" />
+<import src="Card$eb0b5490" />
+<template name="Books$c8149e7c">
+  <view class="_div data-v-51e055c3 books">
+    <view class="_div data-v-51e055c3 search-box">
+      <view class="_div data-v-51e055c3 search-input">
+        <view class="_div data-v-51e055c3 search-icon"></view>
+        <input class="_input data-v-51e055c3 search" type="text" confirm-type="search" value="{{searchKeyword}}" bindinput="handleProxy" placeholder="请输入要搜索的图书名" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+        <view class="_div data-v-51e055c3 search-word" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">{{searchKeyword ? '取消' : ''}}</view>
+      </view>
+      <view class="_div data-v-51e055c3 searchList" wx:if="{{searchKeyword}}">
+        <view class="_div data-v-51e055c3 book-item" wx:key="book.id" key="{{book.id}}" bindtap="handleProxy" data-eventid="{{'2-'+index}}" data-comkey="{{$k}}" wx:for="{{searchBookList}}" wx:for-index="index" wx:for-item="book">
+          <image class="_img data-v-51e055c3 img" src="{{book.image}}" mode="aspectFit"></image>
+          <label style="color: #ea5a49;word-wrap: break-word;white-space: pre-wrap" class="_span data-v-51e055c3">{{book.title}}</label>
+          <label style="white-space: nowrap" class="_span data-v-51e055c3">{{book.author}}</label>
+        </view>
+        <view wx:if="{{searchBookList.length === 0}}" class="_div data-v-51e055c3 text">没有找到您要的图书</view>
+      </view>
+    </view>
+    <view style="height: 100rpx;" class="_div data-v-51e055c3"></view>
+    <template data="{{...$root[$kk+'0'], $root}}" is="TopSwiper$16617035"></template>
+    <template wx:key="item.id" data="{{...$root[$kk+'1-'+index], $root}}" is="Card$eb0b5490" wx:for="{{books}}" wx:for-index="index" wx:for-item="item"></template>
+    <view class="_p data-v-51e055c3 footer-text" wx:if="{{books.length === 0}}"> 还没有图书，赶紧添加吧！ </view>
+    <view class="_p data-v-51e055c3 loadmore-text footer-text" hidden="{{!(!loadmore)}}">
+      <label class="_span data-v-51e055c3 line-bottom">
+        <label style="border-bottom: 1rpx solid #f0f0f0;" class="_span data-v-51e055c3"></label>
+        <label class="_span data-v-51e055c3"></label>
+      </label>
+      <label style="margin: 0 10px;" class="_span data-v-51e055c3">数据全部加载</label>
+      <label class="_span data-v-51e055c3 line-bottom">
+        <label style="border-bottom: 1rpx solid #f0f0f0;" class="_span data-v-51e055c3"></label>
+        <label class="_span data-v-51e055c3"></label>
+      </label>
+    </view>
+  </view>
+</template>

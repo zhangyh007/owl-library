@@ -1,0 +1,7 @@
+<template name="Rate$b7b880f0">
+  <view class="_div data-v-614f81c2 rate">
+    <label class="_span data-v-614f81c2 star"> ☆☆☆☆☆
+      <view class="_div data-v-614f81c2 cover" style=" {{width}}"> ★★★★★ </view>
+    </label>
+  </view>
+</template>

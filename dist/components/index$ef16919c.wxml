@@ -1,0 +1,21 @@
+<import src="card$f2c01cd0" />
+<template name="index$ef16919c">
+  <view class="_div data-v-3e5f5c33 container" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+    <view class="_div data-v-3e5f5c33 userinfo" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <image class="_img data-v-3e5f5c33 userinfo-avatar" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="_div data-v-3e5f5c33 userinfo-nickname">
+        <template data="{{...$root[$kk+'0'], $root}}" is="card$f2c01cd0"></template>
+      </view>
+    </view>
+    <view class="_div data-v-3e5f5c33 usermotto">
+      <view class="_div data-v-3e5f5c33 user-motto">
+        <template data="{{...$root[$kk+'1'], $root}}" is="card$f2c01cd0"></template>
+      </view>
+    </view>
+    <form class="_form data-v-3e5f5c33 form-container">
+      <input type="text" class="_input data-v-3e5f5c33 form-control" value="{{motto}}" bindinput="handleProxy" placeholder="v-model" data-eventid="{{'1'}}" data-comkey="{{$k}}" />
+      <input type="text" class="_input data-v-3e5f5c33 form-control" value="{{motto}}" bindblur="handleProxy" placeholder="v-model.lazy" data-eventid="{{'2'}}" data-comkey="{{$k}}" />
+    </form>
+    <navigator url="/pages/counter/main" class="_a data-v-3e5f5c33 counter">去往Vuex示例页面</navigator>
+  </view>
+</template>

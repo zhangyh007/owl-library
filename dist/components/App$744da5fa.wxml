@@ -1,0 +1,5 @@
+<template name="App$744da5fa">
+  <view class="_div data-v-1217d62c app">
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="doLogin" class="_button data-v-1217d62c"> 获取用户信息 </button>
+  </view>
+</template>

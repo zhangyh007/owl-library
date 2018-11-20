@@ -1,0 +1,30 @@
+<import src="Rate$b7b880f0" />
+<template name="Card$eb0b5490">
+  <navigator class="_a data-v-47a617f2 card" url="{{detailUrl}}">
+    <view class="_div data-v-47a617f2 book-card">
+      <view class="_div data-v-47a617f2 musk">
+        <image src="{{book.image}}" alt="{{book.title}}" mode="aspectFit" lazy-load="true" catchtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_img data-v-47a617f2"></image>
+      </view>
+      <view class="_div data-v-47a617f2 detail">
+        <view class="_div data-v-47a617f2 row">
+          <view class="_p data-v-47a617f2 color-primary">
+            <label class="_span data-v-47a617f2 text">书名：</label> {{book.title}} </view>
+          <view class="_p data-v-47a617f2 color-primary" style="position: relative;">
+            <label class="_span data-v-47a617f2 text"> 评分： </label> {{book.rate}}
+            <label style="position: absolute;right: 0;" class="_span data-v-47a617f2">
+              <template data="{{...$root[$kk+'0'], $root}}" is="Rate$b7b880f0"></template>
+            </label>
+          </view>
+          <view class="_p data-v-47a617f2 color-primary">
+            <label class="_span data-v-47a617f2 text">浏览量：</label> {{book.count}} </view>
+          <view class="_p data-v-47a617f2">
+            <label class="_span data-v-47a617f2 text">作者：</label> {{book.author}} </view>
+          <view class="_p data-v-47a617f2">
+            <label class="_span data-v-47a617f2 text">出版社：</label> {{book.publisher}} </view>
+          <view class="_p data-v-47a617f2">
+            <label class="_span data-v-47a617f2 text">添加人：</label> {{book.user_info.nickName}} </view>
+        </view>
+      </view>
+    </view>
+  </navigator>
+</template>

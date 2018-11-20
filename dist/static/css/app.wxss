@@ -1,0 +1,11 @@
+
+.color-primary {
+  color: #EA5149;
+}
+.loadmore-text {
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20rpx;
+}
