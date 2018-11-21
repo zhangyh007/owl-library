@@ -1,0 +1,18 @@
+<import src="/components/CommentList.vue.wxml" />
+<import src="/components/Card.vue.wxml" /><template name="7fdb295c">
+  <view class="_div data-v-5d7108de comments">
+    <view class="_div data-v-5d7108de control-box">
+      <view class="_div data-v-5d7108de control-item left {{current === 0 ? 'active' : ''}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"> 我的评论 </view>
+      <view class="_div data-v-5d7108de control-item right {{current === 1 ? 'active' : ''}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"> 我的图书 </view>
+    </view>
+    <view wx:if="{{userInfo.openId}}" style="position: relative;height: 200px;" class="_div data-v-5d7108de"><template wx:if="{{current === 0}}" type="user" data="{{...$root[$kk+'0'], $root}}" is="130a9a39"></template>
+      <view wx:if="{{current === 1}}" class="_div data-v-5d7108de">
+        <view class="_div data-v-5d7108de page-title"> 我的图书 </view> <template wx:key="book.id" data="{{...$root[$kk+'1-'+index], $root}}" is="4f13ffa4" wx:for="{{bookList}}" wx:for-index="index" wx:for-item="book"></template>
+        <view class="_div data-v-5d7108de notice" wx:if="{{bookList.length === 0}}">还没有添加过图书，快去添加吧！</view>
+      </view>
+    </view>
+    <view class="_div data-v-5d7108de notice" wx:else style="display: flex;justify-content: center;align-items: center;">
+      <view class="_div data-v-5d7108de sorry"></view> <label style="color: #ea5a49;margin-left: 20px;" class="_span data-v-5d7108de">很抱歉!您还没有登录</label>
+    </view>
+  </view>
+</template>

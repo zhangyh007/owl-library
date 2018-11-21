@@ -1,14 +1,14 @@
 const CONF = {
     // 其他配置 ...
-    // serverHost: 'localhost',
-    // tunnelServerUrl: '',
-    // tunnelSignatureKey: '27fb7d1c161b7ca52d73cce0f1d833f9f5b5ec89',
-    // // 腾讯云相关配置可以查看云 API 秘钥控制台：https://console.cloud.tencent.com/capi
-    // qcloudAppId: '1256954416',
-    // qcloudSecretId: 'AKIDFSZWJyhu9LNQaeSWFoCOTVOG1c3VPywi',
-    // qcloudSecretKey: 'nRwHWaVRMCxcFnIrNrFXju2zsbCdtyyn',
-    // wxMessageToken: 'weixinmsgtoken',
-    // networkTimeout: 30000,
+    serverHost: 'localhost',
+    tunnelServerUrl: '',
+    tunnelSignatureKey: '27fb7d1c161b7ca52d73cce0f1d833f9f5b5ec89',
+    // 腾讯云相关配置可以查看云 API 秘钥控制台：https://console.cloud.tencent.com/capi
+    qcloudAppId: '1256954416',
+    qcloudSecretId: 'AKIDFSZWJyhu9LNQaeSWFoCOTVOG1c3VPywi',
+    qcloudSecretKey: 'nRwHWaVRMCxcFnIrNrFXju2zsbCdtyyn',
+    wxMessageToken: 'weixinmsgtoken',
+    networkTimeout: 30000,
 
     port: '5757',
     rootPathname: '',
@@ -28,11 +28,12 @@ const CONF = {
      */
     mysql: {
         host: 'localhost',
+        // host: '106.15.191.44',
         port: 3306,
         user: 'root',
-        db: 'cAuth',
-        // pass: '123456', // 本地开发
-        pass: 'wx8adb85c9b724a058', // 线上开发
+        db: 'cauth',
+        pass: '123456', // 本地开发
+        // pass: 'wx8adb85c9b724a058', // 线上开发
         char: 'utf8mb4'
     },
 

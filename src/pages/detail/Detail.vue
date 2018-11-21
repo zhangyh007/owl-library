@@ -111,6 +111,9 @@
                   if (response.data.status === 0) {
                     this.location = response.data.result.formatted_address
                   }
+                },
+                fail: err => {
+                  console.log(err)
                 }
               })
             }
@@ -147,7 +150,7 @@
           this.comment = ''
           this.getComment()
         } catch (e) {
-          showModal('失败', e.data.msg)
+          showModal('失败', '评论发布失败')
           console.log(e)
         }
       }
@@ -170,6 +173,11 @@
         this.userInfo = userInfo
       }
       // this.comment = '.......'
+    },
+    onUnload () {
+      this.comment = ''
+      this.location = ''
+      this.phone = ''
     }
   }
 </script>

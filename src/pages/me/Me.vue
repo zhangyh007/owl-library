@@ -64,6 +64,8 @@
           console.log(res)
           if (res.title) {
             showModal('添加成功', `${res.title}添加成功`)
+          } else {
+            showModal('添加失败')
           }
         } catch (e) {
           showModal('失败', e.data.msg)

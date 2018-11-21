@@ -1,38 +1,38 @@
 
-.card.data-v-47a617f2 {
+.card.data-v-83240eba {
   padding: 20rpx 10rpx;
   border-top: 2rpx solid #f1f1fa;
 }
-.book-card.data-v-47a617f2 {
+.book-card.data-v-83240eba {
   font-size: 28rpx;
   display: flex;
 }
-.book-card .musk.data-v-47a617f2 {
+.book-card .musk.data-v-83240eba {
   width: 200rpx;
   height: 240rpx;
 }
-.book-card .musk ._img.data-v-47a617f2 {
+.book-card .musk ._img.data-v-83240eba {
   max-width: 100%;
   max-height: 100%;
 }
-.detail.data-v-47a617f2 {
+.detail.data-v-83240eba {
   width: 100%;
   padding-right: 20rpx;
 }
-.detail .text.data-v-47a617f2 {
+.detail .text.data-v-83240eba {
   width: 120rpx;
   display: inline-block;
   color: #666;
 }
-.rate.data-v-614f81c2 {
+.rate.data-v-4fd13b1a {
   font-size: 28rpx;
   position: relative;
 }
-.rate .star.data-v-614f81c2 {
+.rate .star.data-v-4fd13b1a {
   font-size: 28rpx;
   display: block;
 }
-.rate .cover.data-v-614f81c2 {
+.rate .cover.data-v-4fd13b1a {
   display: block;
   overflow: hidden;
   width: 0;
@@ -41,7 +41,7 @@
   left: 0;
   font-size: 28rpx;
 }
-.avatar.data-v-75092e2b {
+.avatar.data-v-0b55574c {
   width: 40rpx;
   height: 40rpx;
   -webkit-border-radius: 50%;
@@ -50,17 +50,17 @@
   vertical-align: middle;
   margin-right: 20rpx;
 }
-.comment-list.data-v-75092e2b {
+.comment-list.data-v-0b55574c {
   background: #eaeaea;
   padding: 0 0 40rpx 0;
 }
-.comment-list .page-title.data-v-75092e2b {
+.comment-list .page-title.data-v-0b55574c {
   font-size: 36rpx;
   color: #fff;
   background: #EA5A49;
   padding: 20rpx 20rpx;
 }
-.comment-list .comment.data-v-75092e2b {
+.comment-list .comment.data-v-0b55574c {
   margin: 0 20rpx;
   background: #fff;
   font-size: 28rpx;
@@ -68,21 +68,21 @@
   -moz-border-radius: 16rpx;
   border-radius: 16rpx;
 }
-.comment-list .comment .info.data-v-75092e2b {
+.comment-list .comment .info.data-v-0b55574c {
   margin-top: 20rpx;
   padding: 20rpx;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.comment-list .comment .user.data-v-75092e2b {
+.comment-list .comment .user.data-v-0b55574c {
   display: inline-block;
 }
-.comment-list .comment .content.data-v-75092e2b {
+.comment-list .comment .content.data-v-0b55574c {
   padding: 20rpx;
   color: #333;
 }
-.comment-list .notice.data-v-75092e2b {
+.comment-list .notice.data-v-0b55574c {
   margin: 20rpx;
   margin-bottom: 0;
   background: #fff;

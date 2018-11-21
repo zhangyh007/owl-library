@@ -1,0 +1,10 @@
+<import src="/components/YearProgress.vue.wxml" /><template name="645e6bd2">
+  <view class="_div data-v-4c7b911e me">
+    <view class="_div data-v-4c7b911e user-info">
+      <image src="{{userInfo.avatarUrl}}" alt class="_img data-v-4c7b911e"></image> <button class="_button data-v-4c7b911e login" open-type="getUserInfo" wx:if="{{visible}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        {{session ? '获取用户信息' :'点击登录'}}
+      </button>
+      <view class="_p data-v-4c7b911e nickname" wx:else>{{userInfo.nickName}}</view>
+    </view> <template data="{{...$root[$kk+'0'], $root}}" is="d707c5c4"></template> <button bindtap="handleProxy" class="_button data-v-4c7b911e btn" wx:if="{{userInfo.openId}}" data-eventid="{{'1'}}" data-comkey="{{$k}}">添加图书</button>
+  </view>
+</template>

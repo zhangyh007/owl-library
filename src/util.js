@@ -9,9 +9,15 @@ const request = (url, method, data) => {
       success (res) {
         if (res.data.code === 0) {
           resolve(res.data.data)
+        } else if (res.data.code === -1) {
+          reject(res.data)
         } else {
           reject(res.data)
         }
+      },
+      fail (err) {
+        console.log(err)
+        reject(err)
       }
     })
   })

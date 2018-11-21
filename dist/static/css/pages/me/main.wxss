@@ -1,26 +1,26 @@
 @import "/static/css/vendor.wxss";
 
-.me.data-v-7c8dafed {
+.me.data-v-4c7b911e {
   padding: 0 30rpx;
 }
-.me .user-info.data-v-7c8dafed {
+.me .user-info.data-v-4c7b911e {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.me .user-info .login.data-v-7c8dafed {
+.me .user-info .login.data-v-4c7b911e {
   width: 200rpx;
   height: 60rpx;
   line-height: 60rpx;
   font-size: 32rpx;
 }
-.me .user-info .nickname.data-v-7c8dafed {
+.me .user-info .nickname.data-v-4c7b911e {
   text-align: center;
   height: 60rpx;
   line-height: 60rpx;
 }
-.me .user-info ._img.data-v-7c8dafed {
+.me .user-info ._img.data-v-4c7b911e {
   width: 150rpx;
   height: 150rpx;
   margin: 20rpx;
@@ -28,7 +28,7 @@
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-.me .btn.data-v-7c8dafed {
+.me .btn.data-v-4c7b911e {
   margin: 40rpx 0;
   width: 100%;
   color: #fff;
@@ -37,19 +37,19 @@
   line-height: 80rpx;
   font-size: 30rpx;
 }
-.me .btn.data-v-7c8dafed:hover {
+.me .btn.data-v-4c7b911e:hover {
   background: #FA5149;
 }
-.me .btn.data-v-7c8dafed:active {
+.me .btn.data-v-4c7b911e:active {
   background: #FA5149;
 }
-.year-progress.data-v-7250076c {
+.year-progress.data-v-d2eeb1c6 {
   width: 100%;
 }
-.year-progress .progress-word.data-v-7250076c {
+.year-progress .progress-word.data-v-d2eeb1c6 {
   font-size: 32rpx;
 }
-.year-progress .notice.data-v-7250076c {
+.year-progress .notice.data-v-d2eeb1c6 {
   font-size: 28rpx;
   color: #EA5A49;
   margin-top: 40rpx;
