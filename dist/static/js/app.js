@@ -130,7 +130,6 @@ if (false) {(function () {
     var _this = this;
 
     return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
-      var app;
       return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
@@ -139,11 +138,6 @@ if (false) {(function () {
               return Object(__WEBPACK_IMPORTED_MODULE_2__util__["b" /* request */])('/weapp/demo');
 
             case 2:
-              app = _context.sent;
-
-              console.log('heheheh', app);
-
-            case 4:
             case 'end':
               return _context.stop();
           }

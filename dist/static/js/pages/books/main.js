@@ -505,7 +505,7 @@ if (false) {(function () {
               case 4:
                 res = _context.sent;
 
-                console.log(res);
+                // console.log(res)
                 _this.books = _this.books.concat(res.bookList);
                 if (res.bookList.length < _this.pageSize) {
                   _this.loadmore = false;
@@ -514,21 +514,21 @@ if (false) {(function () {
                 }
                 wx.stopPullDownRefresh(); // 停止下拉加载动画
                 wx.hideNavigationBarLoading(); // 隐藏加载loading
-                _context.next = 15;
+                _context.next = 14;
                 break;
 
-              case 12:
-                _context.prev = 12;
+              case 11:
+                _context.prev = 11;
                 _context.t0 = _context['catch'](0);
 
                 console.log(_context.t0);
 
-              case 15:
+              case 14:
               case 'end':
                 return _context.stop();
             }
           }
-        }, _callee, _this, [[0, 12]]);
+        }, _callee, _this, [[0, 11]]);
       }))();
     },
     getTopBooks: function getTopBooks() {
@@ -583,31 +583,30 @@ if (false) {(function () {
                 return _context3.abrupt('return');
 
               case 2:
-                console.log(_this3.searchKeyword);
-                _context3.prev = 3;
-                _context3.next = 6;
+                _context3.prev = 2;
+                _context3.next = 5;
                 return Object(__WEBPACK_IMPORTED_MODULE_2__util__["b" /* request */])('/weapp/searchBooks', 'POST', { keyword: _this3.searchKeyword });
 
-              case 6:
+              case 5:
                 res = _context3.sent;
 
                 // console.log(res)
                 _this3.searchBookList = res.bookList;
-                _context3.next = 13;
+                _context3.next = 12;
                 break;
 
-              case 10:
-                _context3.prev = 10;
-                _context3.t0 = _context3['catch'](3);
+              case 9:
+                _context3.prev = 9;
+                _context3.t0 = _context3['catch'](2);
 
                 Object(__WEBPACK_IMPORTED_MODULE_2__util__["c" /* showModal */])('错误', _context3.t0.msg);
 
-              case 13:
+              case 12:
               case 'end':
                 return _context3.stop();
             }
           }
-        }, _callee3, _this3, [[3, 10]]);
+        }, _callee3, _this3, [[2, 9]]);
       }))();
     },
     goDetail: function goDetail(id) {
@@ -642,7 +641,7 @@ if (false) {(function () {
   onShareAppMessage: function onShareAppMessage(res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮
-      console.log('转发', res.target);
+      // console.log('转发', res.target)
     }
     return {
       text: '猫头鹰图书室',

@@ -186,22 +186,22 @@ if (false) {(function () {
                 wx.setNavigationBarTitle({
                   title: _this2.bookInfo.title
                 });
-                console.log('detail', res);
-                _context.next = 12;
+                // console.log('detail', res)
+                _context.next = 11;
                 break;
 
-              case 9:
-                _context.prev = 9;
+              case 8:
+                _context.prev = 8;
                 _context.t0 = _context['catch'](0);
 
                 console.log(_context.t0);
 
-              case 12:
+              case 11:
               case 'end':
                 return _context.stop();
             }
           }
-        }, _callee, _this2, [[0, 9]]);
+        }, _callee, _this2, [[0, 8]]);
       }))();
     },
     getComment: function getComment() {
@@ -221,23 +221,23 @@ if (false) {(function () {
                 commentList = _context2.sent;
 
                 _this3.commentList = commentList.commentList || [];
-                console.log('commentList', commentList);
-                _context2.next = 12;
+                // console.log('commentList', commentList)
+                _context2.next = 11;
                 break;
 
-              case 8:
-                _context2.prev = 8;
+              case 7:
+                _context2.prev = 7;
                 _context2.t0 = _context2['catch'](0);
 
                 console.log(_context2.t0);
                 Object(__WEBPACK_IMPORTED_MODULE_2__util__["c" /* showModal */])('失败', _context2.t0.data.msg);
 
-              case 12:
+              case 11:
               case 'end':
                 return _context2.stop();
             }
           }
-        }, _callee2, _this3, [[0, 8]]);
+        }, _callee2, _this3, [[0, 7]]);
       }))();
     },
     getLocation: function getLocation(e) {
@@ -245,7 +245,7 @@ if (false) {(function () {
 
       // ak
       var ak = 'okMyLjN7YCazQkd6Dra1FhY8KqTlPIDg';
-      var url = 'http://api.map.baidu.com/geocoder/v2/';
+      var url = 'https://api.map.baidu.com/geocoder/v2/';
       if (e.target.value) {
         wx.getLocation({
           success: function success(res) {
@@ -258,7 +258,7 @@ if (false) {(function () {
                 location: res.latitude + ',' + res.longitude
               },
               success: function success(response) {
-                console.log('location', response);
+                // console.log('location', response)
                 if (response.data.status === 0) {
                   _this4.location = response.data.result.formatted_address;
                 }
@@ -277,7 +277,7 @@ if (false) {(function () {
       if (e.target.value) {
         var phone = wx.getSystemInfoSync();
         this.phone = phone.model;
-        console.log('phone', phone);
+        // console.log('phone', phone)
       } else {
         this.phone = '';
       }
@@ -286,7 +286,7 @@ if (false) {(function () {
       var _this5 = this;
 
       return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee3() {
-        var data, res;
+        var data;
         return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee3$(_context3) {
           while (1) {
             switch (_context3.prev = _context3.next) {
@@ -305,43 +305,40 @@ if (false) {(function () {
                   phone: _this5.phone,
                   bookId: _this5.$root.$mp.query.id,
                   openId: _this5.userInfo.openId
+                  // console.log('评论', data)
                 };
-
-                console.log('评论', data);
-                _context3.prev = 4;
-                _context3.next = 7;
+                _context3.prev = 3;
+                _context3.next = 6;
                 return Object(__WEBPACK_IMPORTED_MODULE_2__util__["b" /* request */])('/weapp/addcomment', 'POST', data);
 
-              case 7:
-                res = _context3.sent;
-
-                console.log('comment', res);
+              case 6:
+                // console.log('comment', res)
                 Object(__WEBPACK_IMPORTED_MODULE_2__util__["c" /* showModal */])('成功', '评论成功！');
                 _this5.comment = '';
                 _this5.getComment();
-                _context3.next = 18;
+                _context3.next = 15;
                 break;
 
-              case 14:
-                _context3.prev = 14;
-                _context3.t0 = _context3['catch'](4);
+              case 11:
+                _context3.prev = 11;
+                _context3.t0 = _context3['catch'](3);
 
                 Object(__WEBPACK_IMPORTED_MODULE_2__util__["c" /* showModal */])('失败', '评论发布失败');
                 console.log(_context3.t0);
 
-              case 18:
+              case 15:
               case 'end':
                 return _context3.stop();
             }
           }
-        }, _callee3, _this5, [[4, 14]]);
+        }, _callee3, _this5, [[3, 11]]);
       }))();
     }
   },
   onShareAppMessage: function onShareAppMessage(res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮
-      console.log('转发', res.target);
+      // console.log('转发', res.target)
     }
     return {
       path: 'pages/detail/main?id=' + this.$root.$mp.query.id
@@ -495,13 +492,13 @@ if (false) {(function () {
   },
   computed: {
     userInfo: function userInfo() {
-      console.log(this.bookInfo.user_info);
+      // console.log(this.bookInfo.user_info)
       return this.bookInfo.user_info || {};
     }
   },
   watch: {
     bookInfo: function bookInfo() {
-      console.log('bookInfo', this.bookInfo);
+      // console.log('bookInfo', this.bookInfo)
     }
   }
 });

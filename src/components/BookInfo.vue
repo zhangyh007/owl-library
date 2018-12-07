@@ -61,13 +61,13 @@
     },
     computed: {
       userInfo () {
-        console.log(this.bookInfo.user_info)
+        // console.log(this.bookInfo.user_info)
         return this.bookInfo.user_info || {}
       }
     },
     watch: {
       bookInfo () {
-        console.log('bookInfo', this.bookInfo)
+        // console.log('bookInfo', this.bookInfo)
       }
     }
   }

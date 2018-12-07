@@ -5956,7 +5956,7 @@ var request = function request(url, method, data) {
         }
       },
       fail: function fail(err) {
-        console.log(err);
+        // console.log(err)
         reject(err);
       }
     });
@@ -6602,9 +6602,11 @@ module.exports = function (C, x) {
 "use strict";
 // 本地开发
 // const host = 'http://localhost:5757'
-// 线上开发
+// 腾讯云测试线上开发
 // const host = 'https://usi2m4uf.qcloud.la'
-var host = 'http://106.15.191.44:8080';
+// 生产
+// const host = 'http://106.15.191.44:8080'
+var host = 'https://www.zhangyh.com.cn';
 
 var config = {
   host: host,
@@ -27010,28 +27012,7 @@ module.exports = { listen };
 /* 140 */,
 /* 141 */,
 /* 142 */,
-/* 143 */
-/***/ (function(module, exports) {
-
-module.exports = function escape(url) {
-    if (typeof url !== 'string') {
-        return url
-    }
-    // If url is already wrapped in quotes, remove them
-    if (/^['"].*['"]$/.test(url)) {
-        url = url.slice(1, -1);
-    }
-    // Should url be wrapped?
-    // See https://drafts.csswg.org/css-values-3/#urls
-    if (/["'() \t\n]/.test(url)) {
-        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
-    }
-
-    return url
-}
-
-
-/***/ }),
+/* 143 */,
 /* 144 */,
 /* 145 */
 /***/ (function(module, exports) {

@@ -16,7 +16,7 @@ const request = (url, method, data) => {
         }
       },
       fail (err) {
-        console.log(err)
+        // console.log(err)
         reject(err)
       }
     })

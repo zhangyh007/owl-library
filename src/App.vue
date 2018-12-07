@@ -23,8 +23,8 @@
       //   })
       // }
 
-      let app = await request('/weapp/demo')
-      console.log('heheheh', app)
+      await request('/weapp/demo')
+      // console.log('heheheh', app)
     }
   }
 </script>

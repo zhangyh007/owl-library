@@ -161,45 +161,44 @@ if (false) {(function () {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                console.log('isbn', isbn);
-                _context.prev = 1;
-                _context.next = 4;
+                _context.prev = 0;
+                _context.next = 3;
                 return Object(__WEBPACK_IMPORTED_MODULE_3__util__["b" /* request */])('/weapp/addbook', 'POST', {
                   isbn: isbn,
                   openId: _this.userInfo.openId
                 });
 
-              case 4:
+              case 3:
                 res = _context.sent;
 
-                console.log(res);
+                // console.log(res)
                 if (res.title) {
                   Object(__WEBPACK_IMPORTED_MODULE_3__util__["c" /* showModal */])('添加成功', res.title + '\u6DFB\u52A0\u6210\u529F');
                 } else {
                   Object(__WEBPACK_IMPORTED_MODULE_3__util__["c" /* showModal */])('添加失败');
                 }
-                _context.next = 12;
+                _context.next = 10;
                 break;
 
-              case 9:
-                _context.prev = 9;
-                _context.t0 = _context['catch'](1);
+              case 7:
+                _context.prev = 7;
+                _context.t0 = _context['catch'](0);
 
                 Object(__WEBPACK_IMPORTED_MODULE_3__util__["c" /* showModal */])('失败', _context.t0.data.msg);
 
-              case 12:
+              case 10:
               case 'end':
                 return _context.stop();
             }
           }
-        }, _callee, _this, [[1, 9]]);
+        }, _callee, _this, [[0, 7]]);
       }))();
     },
     scanBook: function scanBook() {
       var _this2 = this;
 
       // 扫描条形码
-      console.log('添加图书');
+      // console.log('添加图书')
       wx.scanCode({
         onlyFromCamera: true,
         success: function success(res) {
@@ -231,7 +230,7 @@ if (false) {(function () {
     }
   },
   session: function session() {
-    console.log('session', this.session);
+    // console.log('session', this.session)
   }
 });
 

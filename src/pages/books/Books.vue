@@ -75,7 +75,7 @@
         try {
           wx.showNavigationBarLoading() // 显示加载loading
           let res = await request('/weapp/booklist', 'GET', {pageNo: this.pageNo, pageSize: this.pageSize})
-          console.log(res)
+          // console.log(res)
           this.books = this.books.concat(res.bookList)
           if (res.bookList.length < this.pageSize) {
             this.loadmore = false
@@ -101,7 +101,7 @@
         if (!this.searchKeyword) {
           return
         }
-        console.log(this.searchKeyword)
+        // console.log(this.searchKeyword)
         try {
           let res = await request('/weapp/searchBooks', 'POST', {keyword: this.searchKeyword})
           // console.log(res)
@@ -141,7 +141,7 @@
     onShareAppMessage (res) {
       if (res.from === 'button') {
         // 来自页面内转发按钮
-        console.log('转发', res.target)
+        // console.log('转发', res.target)
       }
       return {
         text: '猫头鹰图书室',
