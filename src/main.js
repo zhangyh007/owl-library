@@ -16,7 +16,7 @@ export default {
       'backgroundTextStyle': 'light',
       'navigationBarBackgroundColor': '#EA5149',
       'navigationBarTitleText': '猫头鹰图书室',
-      'navigationBarTextStyle': 'light'
+      'navigationBarTextStyle': 'white'
     },
     'tabBar': {
       selectedColor: '#EA5149',

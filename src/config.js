@@ -1,7 +1,8 @@
 // 本地开发
 // const host = 'http://localhost:5757'
 // 线上开发
-const host = 'https://usi2m4uf.qcloud.la'
+// const host = 'https://usi2m4uf.qcloud.la'
+const host = 'https://www.zhangyh.com.cn'
 
 const config = {
   host,
