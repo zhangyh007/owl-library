@@ -1,0 +1,15 @@
+<template name="CommentList$2160f41a">
+  <view class="_div data-v-0b55574c comment-list" style=" {{color ? '' : 'padding-top:' + '10px' + ';'}}">
+    <view class="_div data-v-0b55574c page-title"> 我的评论 </view>
+    <view class="_div data-v-0b55574c comment" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" wx:for="{{commentList}}" wx:for-index="index" wx:for-item="comment">
+      <view class="_div data-v-0b55574c info">
+        <view class="_div data-v-0b55574c user">
+          <image class="_img data-v-0b55574c avatar" src="{{comment.user_info.image}}" mode="aspectFit"></image> {{comment.user_info.nickName}} </view>
+        <view class="_div data-v-0b55574c right"> {{comment.location || '未知地点'}}
+          <label class="_span data-v-0b55574c color-primary">--</label> {{comment.phone || '未知'}} </view>
+      </view>
+      <view class="_div data-v-0b55574c content"> {{comment.comment}} </view>
+    </view>
+    <view class="_p data-v-0b55574c notice" wx:if="{{commentList.length === 0}}">你还没留下金言，快去评论吧-_-</view>
+  </view>
+</template>

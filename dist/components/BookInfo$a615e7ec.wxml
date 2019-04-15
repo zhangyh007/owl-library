@@ -1,0 +1,30 @@
+<import src="Rate$f9080a9a" />
+<template name="BookInfo$a615e7ec">
+  <view class="_div data-v-1bd2d86c book-info">
+    <view class="_div data-v-1bd2d86c thumb">
+      <image class="_img data-v-1bd2d86c backImage" src="{{bookInfo.image}}" alt="{{bookInfo.alt}}" mode="aspectFill"></image>
+      <image class="_img data-v-1bd2d86c img" src="{{bookInfo.image}}" mode="aspectFit"></image>
+      <view class="_div data-v-1bd2d86c info">
+        <view class="_div data-v-1bd2d86c title"> {{bookInfo.title}} </view>
+        <view class="_div data-v-1bd2d86c author"> {{bookInfo.author}} </view>
+      </view>
+    </view>
+    <view class="_div data-v-1bd2d86c detail">
+      <label class="_span data-v-1bd2d86c">
+        <image class="_img data-v-1bd2d86c avatar" src="{{userInfo.image}}"></image> {{userInfo.nickName}} </label>
+      <view class="_div data-v-1bd2d86c right color-primary" style="display: flex;">
+        <label style="margin-right: 10px" class="_span data-v-1bd2d86c">{{bookInfo.rate}}分</label>
+        <template data="{{...$root[$kk+'0'], $root}}" is="Rate$f9080a9a"></template>
+      </view>
+    </view>
+    <view class="_div data-v-1bd2d86c detail"> {{bookInfo.publisher}}
+      <view class="_div data-v-1bd2d86c right"> 价格： {{bookInfo.price}} </view>
+    </view>
+    <view class="_div data-v-1bd2d86c tags">
+      <view class="_div data-v-1bd2d86c badage" wx:key="tag" key="{{tag}}" wx:for="{{bookInfo.tags}}" wx:for-index="index" wx:for-item="tag">{{tag}}</view>
+    </view>
+    <view class="_div data-v-1bd2d86c summary"> 简介：
+      <view wx:key="i" key="{{i}}" wx:for="{{bookInfo.summary}}" wx:for-index="i" wx:for-item="summary" class="_p data-v-1bd2d86c">{{summary}}</view>
+    </view>
+  </view>
+</template>

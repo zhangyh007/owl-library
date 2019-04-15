@@ -1,6 +1,6 @@
 @import "/static/css/vendor.wxss";
 
-.search-box.data-v-51e055c3 {
+.search-box.data-v-3632ce34 {
   width: 750rpx;
   height: 50rpx;
   padding: 20rpx 10rpx;
@@ -12,12 +12,12 @@
   align-items: center;
   flex-direction: column;
 }
-.search-box .search-input.data-v-51e055c3 {
+.search-box .search-input.data-v-3632ce34 {
   display: flex;
   justify-content: left;
   align-items: center;
 }
-.search-box .search-input .search-icon.data-v-51e055c3 {
+.search-box .search-input .search-icon.data-v-3632ce34 {
   width: 40rpx;
   height: 40rpx;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTMwODAzNzI2MjQyIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE3NTIiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTIyMi42OTQ0IDIyMi43OTY4QTMyMy4xNDg4IDMyMy4xNDg4IDAgMCAwIDEzMy42ODMyIDUxMmMxOS4yNTEyLTg3LjM3MjggNjQuNTEyLTE3Mi43NDg4IDEzNS4wMTQ0LTI0My4zMDI0QzMzOS4yNTEyIDE5OC4xMTg0IDQyNC42MjcyIDE1Mi44ODMyIDUxMiAxMzMuNjMyYy0xMDEuNjMyLTE5LjE0ODgtMjEwLjY4OCAxMC41MjE2LTI4OS4zMDU2IDg5LjE2NDh6IiBmaWxsPSIjZWE1YTQ5IiBwLWlkPSIxNzUzIj48L3BhdGg+PHBhdGggZD0iTTk4OS40NCA4MjIuMTE4NGwtMTIxLjcwMjQtMTIxLjcwMjRhMTE4LjAxNiAxMTguMDE2IDAgMCAwLTkyLjgtMzQuMTI0OGMxMTQuNDU3Ni0xNjUuNTU1MiA5Ny45Mi0zOTQuMzkzNi00OS40ODQ4LTU0MS44MjQtMTY1LjkzOTItMTY1Ljk5MDQtNDM1LjA0NjQtMTY1Ljk5MDQtNjAxLjAzNjggMC0xNjUuOTM5MiAxNjUuOTkwNC0xNjUuOTM5MiA0MzUuMTIzMiAwIDYwMS4xMTM2IDE0Ny40MDQ4IDE0Ny40MzA0IDM3Ni4wNjQgMTYzLjg0IDU0MS43MjE2IDQ5LjM4MjQtMi41NiAzMy4yOCA4Ljg1NzYgNjcuNTMyOCAzNC4xMjQ4IDkyLjhsMTIxLjcwMjQgMTIxLjcyOGM0Ni4wOCA0NS45Nzc2IDEyMS4zNjk2IDQ1Ljk3NzYgMTY3LjM0NzIgMCA0Ni4yMDgtNDUuOTc3NiA0Ni4yMDgtMTIxLjI5MjggMC4xMjgtMTY3LjM3Mjh6TTY3Ni4wOTYgNjc2LjA5NmMtMTM4LjY3NTIgMTM4LjY3NTItMzYzLjM5MiAxMzguNjc1Mi01MDIuMDE2IDAtMTM4LjY3NTItMTM4LjY3NTItMTM4LjY3NTItMzYzLjQ0MzIgMC01MDIuMTE4NCAxMzguNjI0LTEzOC42NzUyIDM2My4zNDA4LTEzOC42NzUyIDUwMi4wMTYgMCAxMzguNjQ5NiAxMzguNTcyOCAxMzguNjQ5NiAzNjMuNDQzMiAwIDUwMi4xMTg0eiIgZmlsbD0iI2VhNWE0OSIgcC1pZD0iMTc1NCI+PC9wYXRoPjwvc3ZnPg==);
@@ -25,7 +25,7 @@
   background-size: contain;
   margin: 0 20rpx;
 }
-.search-box .search-input .search-word.data-v-51e055c3 {
+.search-box .search-input .search-word.data-v-3632ce34 {
   width: 60rpx;
   height: 40rpx;
   color: #666;
@@ -33,7 +33,7 @@
   font-size: 28rpx;
   text-align: right;
 }
-.search-box .search-input .search.data-v-51e055c3 {
+.search-box .search-input .search.data-v-3632ce34 {
   width: 560rpx;
   height: 40rpx;
   line-height: 40rpx;
@@ -45,7 +45,7 @@
   background: #fff;
   padding-left: 20rpx;
 }
-.search-box .searchList.data-v-51e055c3 {
+.search-box .searchList.data-v-3632ce34 {
   width: 710rpx;
   max-height: 800rpx;
   border-radius: 10rpx;
@@ -65,7 +65,7 @@
   align-items: center;
   justify-content: center;
 }
-.search-box .searchList .book-item.data-v-51e055c3 {
+.search-box .searchList .book-item.data-v-3632ce34 {
   width: 690rpx;
   display: flex;
   justify-content: space-between;
@@ -75,12 +75,12 @@
   border-radius: 10rpx;
   margin-bottom: 20rpx;
 }
-.search-box .searchList .img.data-v-51e055c3 {
+.search-box .searchList .img.data-v-3632ce34 {
   width: 70rpx;
   height: 100rpx;
   margin-right: 20rpx;
 }
-.search-box .text.data-v-51e055c3 {
+.search-box .text.data-v-3632ce34 {
   height: 40rpx;
   line-height: 40rpx;
   font-size: 32rpx;
@@ -88,20 +88,20 @@
   color: #333;
   margin-bottom: 20rpx;
 }
-.footer-text.data-v-51e055c3 {
+.footer-text.data-v-3632ce34 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer-text .line-bottom.data-v-51e055c3 {
+.footer-text .line-bottom.data-v-3632ce34 {
   display: inline-flex;
   flex-direction: column;
   width: 120rpx;
 }
-.swiper.data-v-4b38023b {
+.swiper.data-v-6465e82a {
   margin-top: 10rpx;
 }
-.swiper .slide-image.data-v-4b38023b {
+.swiper .slide-image.data-v-6465e82a {
   width: 33%;
   height: 250rpx;
 }

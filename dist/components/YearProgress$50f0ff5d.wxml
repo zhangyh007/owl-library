@@ -1,0 +1,9 @@
+<template name="YearProgress$50f0ff5d">
+  <view class="_div data-v-d2eeb1c6 year-progress">
+    <progress percent="{{getPercent}}" activeColor="#EA5A49" active="true" show-info="true" class="_progress data-v-d2eeb1c6" />
+    <view class="_p data-v-d2eeb1c6 progress-word">{{year}}年已经过去了{{days}}天，{{getPercent}}%，还剩{{getRestDays}}天</view>
+    <view class="_p data-v-d2eeb1c6 notice">温馨提示：
+      <label style="color: #aaa;" class="_span data-v-d2eeb1c6">{{notice}}</label>
+    </view>
+  </view>
+</template>
