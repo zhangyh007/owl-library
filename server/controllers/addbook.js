@@ -20,7 +20,7 @@ module.exports = async (ctx, next) => {
             }
             return
         }
-        let url = 'https://api.douban.com/v2/book/isbn/' + isbn
+        let url = 'https://api.douban.com/v2/book/isbn/' + isbn + '?apikey=0df993c66c0c636e29ecbb5344252a4a' // 一分钟10次
         const bookInfo = await getJSON(url)
         const rate = bookInfo.rating.average
         const {title, image, alt, publisher, summary, price} = bookInfo
