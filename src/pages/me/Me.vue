@@ -55,22 +55,24 @@
         })
       },
       async addBook (isbn) {
-        console.log('isbn', isbn)
+        // console.log('isbn', isbn)
         try {
           let res = await request('/weapp/addbook', 'POST', {
             isbn,
             openId: this.userInfo.openId
           })
-          console.log(res)
+          // console.log(res)
           if (res.title) {
             showModal('添加成功', `${res.title}添加成功`)
+          } else {
+            showModal('添加失败')
           }
         } catch (e) {
           showModal('失败', e.data.msg)
         }
       },
       scanBook () { // 扫描条形码
-        console.log('添加图书')
+        // console.log('添加图书')
         wx.scanCode({
           onlyFromCamera: true,
           success: (res) => {
@@ -101,7 +103,7 @@
       }
     },
     session () {
-      console.log('session', this.session)
+      // console.log('session', this.session)
     }
   }
 </script>

@@ -32,6 +32,16 @@ module.exports = async (ctx, next) => {
         //     rate, title, image, alt, publisher, summary, price, tags, author
         // })
         try {
+            const bookInfo = await getJSON(url)
+            const rate = bookInfo.rating.average
+            const {title, image, alt, publisher, summary, price} = bookInfo
+            const tags = bookInfo.tags.map(item => {
+                return `${item.title} ${item.count}`
+            }).join(',')
+            const author = bookInfo.author.join(',')
+            // console.log({
+            //     rate, title, image, alt, publisher, summary, price, tags, author
+            // })
             await mysql('books').insert({
                 isbn, openId, rate, title, image, alt, publisher, summary, price, tags, author
             })

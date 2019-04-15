@@ -76,7 +76,7 @@
           wx.setNavigationBarTitle({
             title: this.bookInfo.title
           })
-          console.log('detail', res)
+          // console.log('detail', res)
         } catch (e) {
           console.log(e)
         }
@@ -85,7 +85,7 @@
         try {
           let commentList = await request('/weapp/commentlist', 'GET', {bookId: this.bookId})
           this.commentList = commentList.commentList || []
-          console.log('commentList', commentList)
+          // console.log('commentList', commentList)
         } catch (e) {
           console.log(e)
           showModal('失败', e.data.msg)
@@ -94,7 +94,7 @@
       getLocation (e) {
         // ak
         const ak = 'okMyLjN7YCazQkd6Dra1FhY8KqTlPIDg'
-        let url = 'http://api.map.baidu.com/geocoder/v2/'
+        let url = 'https://api.map.baidu.com/geocoder/v2/'
         if (e.target.value) {
           wx.getLocation({
             success: res => {
@@ -107,10 +107,13 @@
                   location: `${res.latitude},${res.longitude}`
                 },
                 success: response => {
-                  console.log('location', response)
+                  // console.log('location', response)
                   if (response.data.status === 0) {
                     this.location = response.data.result.formatted_address
                   }
+                },
+                fail: err => {
+                  console.log(err)
                 }
               })
             }
@@ -123,7 +126,7 @@
         if (e.target.value) {
           const phone = wx.getSystemInfoSync()
           this.phone = phone.model
-          console.log('phone', phone)
+          // console.log('phone', phone)
         } else {
           this.phone = ''
         }
@@ -139,15 +142,15 @@
           bookId: this.$root.$mp.query.id,
           openId: this.userInfo.openId
         }
-        console.log('评论', data)
+        // console.log('评论', data)
         try {
-          let res = await request('/weapp/addcomment', 'POST', data)
-          console.log('comment', res)
+          await request('/weapp/addcomment', 'POST', data)
+          // console.log('comment', res)
           showModal('成功', '评论成功！')
           this.comment = ''
           this.getComment()
         } catch (e) {
-          showModal('失败', e.data.msg)
+          showModal('失败', '评论发布失败')
           console.log(e)
         }
       }
@@ -155,7 +158,7 @@
     onShareAppMessage (res) {
       if (res.from === 'button') {
         // 来自页面内转发按钮
-        console.log('转发', res.target)
+        // console.log('转发', res.target)
       }
       return {
         path: 'pages/detail/main?id=' + this.$root.$mp.query.id
@@ -170,6 +173,11 @@
         this.userInfo = userInfo
       }
       // this.comment = '.......'
+    },
+    onUnload () {
+      this.comment = ''
+      this.location = ''
+      this.phone = ''
     }
   }
 </script>

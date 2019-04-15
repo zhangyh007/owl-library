@@ -1,5 +1,6 @@
 <template>
   <div class="books">
+    <div class="mask" v-if="showMask"></div>
     <div class="search-box">
       <div class="search-input">
         <div class="search-icon"></div>
@@ -9,7 +10,9 @@
           confirm-type="search"
           v-model="searchKeyword"
           placeholder="请输入要搜索的图书名"
-          @input="searchBook">
+          @input="searchBook"
+          @focus="showMask = true"
+          @blur="hideMask">
         <div class="search-word" @click="cancelSearch">{{searchKeyword ? '取消' : ''}}</div>
       </div>
 
@@ -63,7 +66,8 @@
         pageSize: 10,
         loadmore: true,
         searchKeyword: '',
-        searchBookList: []
+        searchBookList: [],
+        showMask: false
       }
     },
     methods: {
@@ -71,7 +75,7 @@
         try {
           wx.showNavigationBarLoading() // 显示加载loading
           let res = await request('/weapp/booklist', 'GET', {pageNo: this.pageNo, pageSize: this.pageSize})
-          console.log(res)
+          // console.log(res)
           this.books = this.books.concat(res.bookList)
           if (res.bookList.length < this.pageSize) {
             this.loadmore = false
@@ -97,7 +101,7 @@
         if (!this.searchKeyword) {
           return
         }
-        console.log(this.searchKeyword)
+        // console.log(this.searchKeyword)
         try {
           let res = await request('/weapp/searchBooks', 'POST', {keyword: this.searchKeyword})
           // console.log(res)
@@ -115,6 +119,11 @@
       cancelSearch () {
         this.searchKeyword = ''
         this.searchBookList = []
+      },
+      hideMask () {
+        if (!this.searchKeyword) {
+          this.showMask = false
+        }
       }
     },
     onPullDownRefresh () { // 下拉刷新
@@ -132,7 +141,7 @@
     onShareAppMessage (res) {
       if (res.from === 'button') {
         // 来自页面内转发按钮
-        console.log('转发', res.target)
+        // console.log('转发', res.target)
       }
       return {
         text: '猫头鹰图书室',
@@ -147,6 +156,15 @@
 </script>
 
 <style scoped lang="less">
+  .mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
   .search-box {
     width: 750rpx;
     height: 50rpx;
@@ -206,7 +224,7 @@
       position: absolute;
       left: 0;
       top: 105rpx;
-      z-index: 9;
+      z-index: 10;
       font-size: 14px;
       background: #EAEAEA;
       display: flex;
